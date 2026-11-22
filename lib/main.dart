@@ -11,7 +11,11 @@ void main() {
       appBarTheme: const AppBarTheme().copyWith( 
       backgroundColor: kColorScheme.onPrimaryContainer,
       foregroundColor: kColorScheme.primaryContainer,
-      )
+      ),
+    cardTheme: const CardThemeData().copyWith(
+        color: kColorScheme.secondaryContainer,
+        margin: const EdgeInsets.all(16),
+      ),
     ),
       home: const Expenses(),
   ),

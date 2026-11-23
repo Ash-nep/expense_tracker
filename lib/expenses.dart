@@ -94,13 +94,15 @@ class _ExpensesState extends State<Expenses> {
       ? Column(
       children: [
         //Toolbar with the Add button => Row()
-        Chart(expenses: _registeredExpenses),
+        Expanded(
+          child: Chart(expenses: _registeredExpenses),
+        ),
         Expanded(
           child: mainContent,
         ),
       ],
     )
-    Row(children: [
+    : Row(children: [
       Chart(expenses: _registeredExpenses),
       Expanded(
         child: mainContent,

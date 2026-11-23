@@ -60,7 +60,7 @@ void main() {
       ),
     ),
     //themeMode
-    themeMode:ThemeMode.dark, //default
+    themeMode:ThemeMode.light, //default
     home: const Expenses(),
   ),
 );

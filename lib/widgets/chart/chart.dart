@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'package:expense_tracker/widgets/chart/chart_bar.dart';
 import 'package:expense_tracker/models/expense.dart';
@@ -45,8 +45,8 @@ class Chart extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
         gradient: LinearGradient(
           colors: [
-            Theme.of(context).colorScheme.primary.withOpacity(0.3),
-            Theme.of(context).colorScheme.primary.withOpacity(0.0)
+            Theme.of(context).colorScheme.primary.withValues(alpha:0.3),
+            Theme.of(context).colorScheme.primary.withValues(alpha:0.0),
           ],
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
@@ -81,7 +81,7 @@ class Chart extends StatelessWidget {
                             : Theme.of(context)
                                 .colorScheme
                                 .primary
-                                .withOpacity(0.7),
+                                .withValues(alpha: 0.7),
                       ),
                     ),
                   ),

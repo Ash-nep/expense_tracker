@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class ChartBar extends StatelessWidget {
   const ChartBar({
@@ -24,7 +24,7 @@ class ChartBar extends StatelessWidget {
                   const BorderRadius.vertical(top: Radius.circular(8)),
               color: isDarkMode
                   ? Theme.of(context).colorScheme.secondary
-                  : Theme.of(context).colorScheme.primary.withOpacity(0.65),
+                  : Theme.of(context).colorScheme.primary.withValues(alpha: 0.65),
             ),
           ),
         ),
